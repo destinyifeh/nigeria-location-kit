@@ -2,6 +2,20 @@
   "name": "nigeria-location-kit",
   "version": "1.0.0",
   "description": "A lightweight, Nigeria-only location utility library providing States and LGAs with headless core logic and optional React/React Native components.",
+  "keywords": [
+  "nigeria",
+  "nigeria states",
+  "nigeria lga",
+  "local government areas",
+  "lagos",
+  "abuja fct",
+  "naija",
+  "location picker",
+  "address selector",
+  "react",
+  "react-native",
+  "headless"
+],
   "author": "Destiny Ifehor <destinyifehor@gmail.com>",
   "repository": {
     "type": "git",
