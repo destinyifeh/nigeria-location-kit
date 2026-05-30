@@ -1,0 +1,82 @@
+{
+  "name": "nigeria-location-kit",
+  "version": "1.0.0",
+  "description": "A lightweight, Nigeria-only location utility library providing States and LGAs with headless core logic and optional React/React Native components.",
+  "author": "Destiny Ifehor <destinyifehor@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/destinyifeh/nigeria-location-kit.git"
+  },
+  "homepage": "https://github.com/destinyifeh/nigeria-location-kit#readme",
+  "bugs": {
+    "url": "https://github.com/destinyifeh/nigeria-location-kit/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./react": {
+      "import": {
+        "types": "./dist/react.d.ts",
+        "default": "./dist/react.js"
+      },
+      "require": {
+        "types": "./dist/react.d.cts",
+        "default": "./dist/react.cjs"
+      }
+    },
+    "./react-native": {
+      "import": {
+        "types": "./dist/react-native.d.ts",
+        "default": "./dist/react-native.js"
+      },
+      "require": {
+        "types": "./dist/react-native.d.cts",
+        "default": "./dist/react-native.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-native": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-native": "^0.73.0",
+    "react": "^19.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0",
+    "vitest": "^4.1.7"
+  },
+  "sideEffects": false
+}
