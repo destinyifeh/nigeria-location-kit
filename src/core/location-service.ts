@@ -8,8 +8,8 @@ export function getStates(): State[] {
   return typedStatesData;
 }
 
-export function getStateById(id: string | number): State | undefined {
-  return typedStatesData.find(s => String(s.id) === String(id));
+export function getStateById(id: string): State | undefined {
+  return typedStatesData.find(s => s.id === id);
 }
 
 export function getStateByName(name: string): State | undefined {
@@ -17,7 +17,7 @@ export function getStateByName(name: string): State | undefined {
   return typedStatesData.find(s => s.name.toLowerCase() === normalizedName);
 }
 
-export function getLGAs(stateIdOrName: string | number): LGA[] {
+export function getLGAs(stateIdOrName: string): LGA[] {
   let state = getStateById(stateIdOrName);
   
   if (!state && typeof stateIdOrName === 'string') {
