@@ -1,6 +1,6 @@
 {
   "name": "nigeria-location-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight, Nigeria-only location utility library providing States and LGAs with headless core logic and optional React/React Native components.",
   "keywords": [
     "nigeria",
@@ -64,6 +64,10 @@
   },
   "files": [
     "dist",
+    "react.js",
+    "react.d.ts",
+    "react-native.js",
+    "react-native.d.ts",
     "README.md"
   ],
   "scripts": {
